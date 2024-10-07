@@ -1,7 +1,7 @@
 import streamlit as st
 from src.generation import RAG_Generation
 
-st.title("Simple friendly chatbot for normal conversations")
+st.title("Document chatbot with RAG")
 
 # Initialize chat history and RAG_Generation instance
 if "messages" not in st.session_state:
