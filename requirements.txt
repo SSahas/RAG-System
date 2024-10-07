@@ -1,4 +1,8 @@
 torch
 transformers
+pypdf
+chromadb
 langchain_chroma
-langchain_huggingface
+langchain-huggingface
+langchain-community
+langchain-text-splitters 
