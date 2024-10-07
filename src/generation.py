@@ -65,20 +65,6 @@ class RAG_Generation:
         return self.tokenizer.decode(output_tokens[0][input_tokens_length:], skip_special_tokens = True)
 
 
-def main():
-    """Main function to demonstrate the usage of RAGGeneration."""
-    client = RAG_Generation()
-    query = "How sound gets propagated?"
-    output = client.generate_output(query)
-    print(f"Query: {query}")
-    print(f"Response: {output}")
-
-
-if __name__ == "__main__":
-    main()
-
-
-
 
 
 
