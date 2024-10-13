@@ -5,7 +5,7 @@ from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_chroma import Chroma
 
 loader = PyPDFLoader(
-    file_path = "/content/iesc111.pdf",
+    file_path = "/assets/iesc111.pdf",
 
 )
 
@@ -17,8 +17,8 @@ chunks = text_splitter.split_documents(data)
 
 vector_store = Chroma.from_documents(
     documents=chunks,
-    embedding=HuggingFaceEmbeddings(model_name="nomic-ai/nomic-embed-text-v1.5",model_kwargs = {'trust_remote_code': True}), # Changed from embedding_function to embedding
-    persist_directory="vector_db",  # Where to save data locally, remove if not necessary
+    embedding=HuggingFaceEmbeddings(model_name="nomic-ai/nomic-embed-text-v1.5",model_kwargs = {'trust_remote_code': True}), 
+    persist_directory="vector_db",  
 )
 
 
