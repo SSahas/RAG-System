@@ -1,7 +1,7 @@
 # Retrieval augumented system web app
 
-A simple RAG web app which can be used as a document chatbot. The system uses semantic search algoritham for retriving the relevant text for the user query. 
-The system uses llm and prompt engineering techniques for better responses to the user query. streamlit is used as User interface.
+- A simple RAG web app which can be used as a document chatbot. The system uses semantic search algoritham for retriving the relevant text to the user query. 
+- The system uses llm and prompt engineering techniques for better responses to the user query. streamlit is used for frontend.
 
 ## To run the model 
 clone the repo
